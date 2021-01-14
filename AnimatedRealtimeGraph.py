@@ -9,6 +9,7 @@ import PySimpleGUI as sg
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import plotter
+import time
 
 
 def draw_figure(canvas, figure):
@@ -67,8 +68,11 @@ if __name__ == "__main__":
                 y = np.random.randint(-1000, 1000, points_num)
 
                 # Plot Data
+                start = time.perf_counter_ns()
                 line_view.plot(y)
                 scatter_view.plot([rand_array_x, rand_array_y])
+                end = time.perf_counter_ns()
+                print(str(1 / (end - start) * 1.0e+9) + " [fps]")
 
             elif event == "Clear":
                 line_view.cla()
