@@ -1,7 +1,6 @@
 # pysimplegui_realtime_graph
 
-https://user-images.githubusercontent.com/22016935/104595570-22093f00-56b6-11eb-8bf8-206fff4cc172.gif
-
+![Embedding-Fast_Render_Matplotlib-In-PySimpleGUI-2021-01-14-22-05-20](https://user-images.githubusercontent.com/22016935/104595570-22093f00-56b6-11eb-8bf8-206fff4cc172.gif)
 ***
 
 ## Requirements
